@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <h1>Listado de tareas</h1>
+    <hr>
+    <br/>
+    <div *ngFor="let task of tasks">
+        <div class="card mb-2">
+            <div class="card-header d-flex justify-content-between align-item-center">
+                {{ task.title }}
+                <div>
+                    <button class="btn btn-danger" (click)="delete(task)">Delete</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
